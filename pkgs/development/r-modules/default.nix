@@ -1144,7 +1144,7 @@ let
       preConfigure = ''
         patchShebangs configure
         '';
-      NIX_LDFLAGS = "-lfontconfig -lfreetype";
+      NIX_LDFLAGS = "-lcairo -lfontconfig -lfreetype";
     });
 
     magick = old.magick.overrideAttrs (attrs: {
